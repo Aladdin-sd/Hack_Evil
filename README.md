@@ -22,16 +22,18 @@ Do not forget to support me on my Facebook account 🇸🇩
 https://www.facebook.com/X.11Android
 
 
-Figure 1
+The number 1
 You can film the victim via a link...
 
-Figure 2
+The number 2
 You can film the victim a 10-second video.
 
-Figure 3
+The number 3
 You can open a listening session on the victim's phone via the apk application …
 
 note:-
+ngrok tool must be installed 👌
+ 
 Captured photos and videos are saved in your phone's main storage❤️
 
 ![alt text](https://github.com/Aladdin-sd/Hack_Evil/blob/main/Screenshot_20230418-154930.png)
