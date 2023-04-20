@@ -18,8 +18,19 @@ Do not forget to support me on my Facebook account 🇸🇩
 https://www.facebook.com/X.11Android
 
 
+When opening the tool, the number 1 represents a photograph via a link
+Figure 2 is a video capture of a link
+And the number 3 is to open a listening session in the apk application in the target phone
 
 ![alt text](https://github.com/Aladdin-sd/Hack_Evil/blob/main/Screenshot_20230418-154930.png)
-jsjshshsh
+
+
+Here, the victim's phone is listened to via the apk application, which I placed a link for you at the top
+
+note:-
+You need a modification application so that you can modify the port and host in the apk application so that you can listen to it from within the tool
+
+To know more, join my channel on Telegram:
+https://t.me/X1Android
 
 ![alt text](https://github.com/Aladdin-sd/Hack_Evil/blob/main/Screenshot_20230418-155605.png)
