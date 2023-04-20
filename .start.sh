@@ -54,7 +54,7 @@ path(){
 
 
 localhost() {
-cd .camera_image
+cd .image_hack
         printf "\n${RS} ${CR}[${CW}-${CR}]${CY} Input Port ${CG}[test:${def_port}]: ${CC}"
         read port
         port="${port:-${def_port}}"
